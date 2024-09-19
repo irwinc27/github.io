@@ -1,0 +1,264 @@
+/*-------GENERAL STYLES--------*/
+body {
+    margin:0%
+}
+
+/*------H1 ELEMENTS------*/
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2%;
+    color: #fff;
+}
+
+/*H1 HOVER EFFECT*/
+h1:hover {
+    filter: drop-shadow(5%);
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/*--PORTFOLIO TEXT--*/
+.white-text {
+    color:#fff;
+}
+
+/*-PARAGRAPH STYLING-*/
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    letter-spacing: normal;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+/*--CENTER CLASS--*/
+.center {
+    text-align: center;
+}
+
+/*--ANCHOR ELEMENTS--*/
+a {
+    color: blue;
+}
+
+/*--QUOTATION ELEMENTS--*/
+q {
+    font-style: italic;
+    font-size: 40px;
+    color:deeppink;
+}
+
+
+/*--IMAGE ELEMENTS--*/
+img {
+    border-radius: 5px;
+    max-width: auto;
+    height:340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--IMAGE HOVER EFFECTS--*/
+img:hover {
+    filter:grayscale(10%);
+    transition: transform 1.5s;
+    transform: scale(1.1);
+   
+}
+
+/*--MEDIA--*/
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/*--FOOTER ELEMENTS--*/
+footer {
+    padding: 2%;
+    background-color: #fff;
+}
+
+footer p {
+    color: black;
+}
+
+/****NAVBAR STYLING****/
+.Navbar {
+    overflow: hidden;
+    background-color:rgb(168, 87, 245);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation:normal;
+    animation: normal;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;} 
+    to {left: 0vw;} 
+}
+
+/***NAVBAR LINKS***/
+.Navbar a {
+    float: left;
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width:576px) {
+    .Navbar a{
+        width:25%;
+        font-size:100%;
+    }    
+}
+
+/***NAVBAR HOVER EFFECT***/
+.Navbar a:hover{
+    background-color:darkmagenta;
+    color: grey;
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+.Navbar a.active{
+    background-color: purple;
+    color: black;
+}
+
+/***VIDEO STYLING***/
+#Rebel_Alliance {
+    position:fixed; 
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+    min-width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    #Rebel_Alliance {
+        display: none;
+    }
+}
+
+/**TEXT OVER VIDEO**/
+.video_text {
+    background: rgba(0 , 0 , 0, 0.5);
+    color: black;
+    width: 100%;
+    padding: 20%;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;} 
+    to {top: 0vw;} 
+}
+
+/***TABLE STYLING***/
+* {
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 2%;
+    height:400px;
+    background-color: darkmagenta;
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 2%;
+    height: 400px;
+    background-color: darkorchid;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/****CONTACT FORM STYLING****/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color:black;
+    border: 5px purple;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    resize: vertical;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px magenta inset;
+}
+
+/***HOVER EFFECT SUBMIT BUTTON***/
+input[type=submit]:hover {
+    background-color: purple;
+    color:#fff;
+    transform: scale(1.2);
+    transition: transform.1s;
+    text-decoration: double;
+    border-radius: 8px;
+
+}
+
+/***FORM ELEMENT***/
+form {
+    border-radius: 10px;
+    background-color:blueviolet;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form [type=submit] {
+    background-color:darkmagenta;
+    color:black;
+    border-radius: 4px;
+}
