@@ -1,7 +1,123 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <!----HEAD----->
+
+    <head>
+        <meta chrset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Craig Irwin</title>
+        <link rel="stylesheet" type="text/css" href="c:\Users\irwin\Documents\MyTechProjects\Portfolio\portflio_css.css">
+    </head>
+
+    <!----/HEAD---->
+
+    <!-----BODY----->
+    
+    <body class="Background">
+
+        <!-----NAVBAR----->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#My_Work">My Work</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!----/NAVBAR------>
+
+         <!--Breaks inserted to add space between navbar and the first heading-->
+         <br>
+         <br>
+    
+        <!------BACKGROUND VIDEO------>
+        <div id="Home">
+            <video autoplay muted loop id="Rebel_Alliance">
+                <source src="c:\Users\irwin\Documents\MyTechProjects\Portfolio\Videos\68978-529861058_tiny.mp4" type="video/mp4">
+           <!--DISPLAY IF VIDEO DOESNT WORK-->
+           Rebel Alliance Flag
+            </video>
+        </div>
+
+        <!-----VIDEO TEXT----->
+        <div class="video_text">
+            <h1 class="white-text">Craig's Solo portfolio project</h1>
+            <strong>
+                <p class="center">
+                    <q>Give someone a program, you frustrate them for a day;
+                        <br> teach them how to program, and you frustrate them for a lifetime
+                    </q>
+                    <br>-David Leinweber
+                    <br>
+                    <br>Hi. My name is Craig.
+                    <br> This is my website, where you can lern a little bit about me and the things I have learned.
+                </p>
+            </strong>
+        </div>
+
+        <!----ABOUT---->
+        <div class="row" id="About">
+            <!---LEFT COLUMN--->
+            <div class="Column_2">
+                <img src="c:\Users\irwin\Documents\MyTechProjects\Portfolio\Pictures\coding-1841550_1280.jpg" alt="Coding_img not found">
+            </div>
+            <!---RIGHT COLUMN--->   
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    <br>I am currently studying software and program design through<a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> 
+                    <br>
+                    <br>I was looking for a way to further my knowledge and expand into different areas of IT after already having worked in the more computer components area.
+                    <br>
+                    <br>My studying and coding is fit and worked around spending time with my wife whether thats at home or on holidays.
+                </p>
+            </div>
+       </div>
+
+       <!---GITHUB--->
+       <div class="row" id="My_Work">
+             <!---LEFT COLUMN---->
+             <div class="Column_1">
+                <h1>My Work</h1>
+                <p>
+                    My work and projects are linked here via GitHub:
+                    <br>
+                    <p class="center"><a href="https://github.com/irwinc27/HTML-and-CSS-Projects" target="_blank"> Tech Academy GitHub</a></p>
+                </p>
+             </div>
+             <!--RIGHT COLUMN--->
+             <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="c:\Users\irwin\Documents\MyTechProjects\Portfolio\Pictures\github-mark-white.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!---CONTACT--->
+        <div class="Row" id="Contact">
+            <!---CONTACT PIC LEFT--->
+            <div class="Column_2 Column_tall">
+                <img src="c:\Users\irwin\Documents\MyTechProjects\Portfolio\Pictures\computer-2564367_1280.jpg" alt="Computer_img not found">
+            </div>
+            <!---CONTACT LEFT COLUMN--->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Name">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Email">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Message">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!---FOOTER--->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
 </html>
+
